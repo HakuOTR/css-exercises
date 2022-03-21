@@ -6,12 +6,16 @@ body {
   margin: 0;
   background: #eee;
   font-family: Besley, serif;
+  display: flex;
 }
 
 .header {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: inline-flex;
+  justify-content: flex-start;
+  flex: 1;
 }
 
 .profile-image {
@@ -27,6 +31,18 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  margin-left: .3em;
+}
+
+.right-elements{
+  margin-left: auto;
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1em;
+  margin-right: 1em;
+  margin-top: .5em;
+  margin-bottom: .5em;
 }
 
 button {
@@ -45,4 +61,6 @@ a {
 
 ul {
   list-style-type: none;
+  display: inline-flex;
+  
 }
